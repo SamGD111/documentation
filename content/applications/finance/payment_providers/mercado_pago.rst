@@ -5,6 +5,9 @@ Mercado Pago
 `Mercado Pago <https://www.mercadopago.com/>`_ is an online payment provider covering several
 countries, currencies and payment methods in Latin America.
 
+Odoo is integrated with ‘Mercado Pago Checkout Pro <https://www.mercadopago.com.ar/developers/en/docs/checkout-pro/landing/>’: 
+The buyer is directed to a Mercado Pago page where they complete the transaction securely and quickly.
+
 .. _payment_providers/mercado_pago/configure_dashboard:
 
 Configuration on Mercado Pago Dashboard
@@ -15,6 +18,10 @@ Configuration on Mercado Pago Dashboard
 #. Go to :menuselection:`Production Credentials` or :menuselection:`Credentials` if your are in
    a *Test* environment and copy your **Access Token**
 
+.. image:: mercado_pago/MP_credentials.png
+   :align: center 
+   :alt: Production and Testing credentials
+
 .. _payment_providers/mercado_pago/configure_odoo:
 
 Configuration on Odoo
@@ -24,7 +31,16 @@ Configuration on Odoo
    state to :guilabel:`Enabled`.
 #. In the :guilabel:`Credentials` tab, fill the :guilabel:`Access Token` with the value
    you saved at the step :ref:`payment_providers/mercado_pago/configure_dashboard`.
+
+.. image:: mercado_pago/mercadopago_access_token.png
+   :align: center 
+   :alt: Access Token configuration for Mercado Pago
+
+#. In the Configuration tab, select the payment journal from one of your existing type Bank journals.
 #. Configure the rest of the options to your liking.
+
+.. important::
+   Mercado Pago functions correctly with the “Enabled” status activated for Production   and Testing purposes. For this payment provider the “Test    Mode” configuration in Odoo will result in an error message.
 
 .. seealso::
    - :doc:`../payment_providers`
