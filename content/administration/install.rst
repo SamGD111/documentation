@@ -12,7 +12,7 @@ all.
 - :doc:`Packaged installers <install/packages>` are suitable for testing Odoo and developing
   modules. They can be used for long-term production with additional deployment and maintenance
   work.
-
+f;wemvlkwvklsv  
 - :doc:`Source install <install/source>` provides greater flexibility, as it allows, for example,
   running multiple Odoo versions on the same system. It is adequate to develop modules and can be
   used as a base for production deployment.
