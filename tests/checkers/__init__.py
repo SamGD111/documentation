@@ -3,3 +3,4 @@ from . import resource_files
 from . import rst_style
 from . import source_gui
 test
+test2
